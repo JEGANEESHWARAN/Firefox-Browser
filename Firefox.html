@@ -11,21 +11,30 @@
 <body>
     <header>
     <nav>
-        <div>
-        <h2>moz://a</h2></div>
+        <h2>moz://a</h2>
         <ul>
             <li><a href="#">Firefox Browsers</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Who We Are</a></li>
             <li><a href="#">Innovation</a></li>
         </ul>
-        <div>
-        <button>Download Firefox</button>
+        <div >
+        <button class="headnav-2dbu">Download Firefox</button>
         </div>
-        <span class="bar"><i class="fa-solid fa-bars"></i></span>
+        <button class="bar"><i class="fa-solid fa-bars"></i></button>
+        
     </nav>
+    <div class="line1"></div>
     </header>
-    <section></section>
+    <script>
+        const bar = document.querySelector('.bar');
+        const barList = document.querySelector('nav ul');
+        bar.addEventListener('click',() => {
+            barList.classList.toggle('showmenu');
+        })
+    </script>
+    <section class="v">
+    </section>
     <section></section>
     <section></section>
     <section></section>
