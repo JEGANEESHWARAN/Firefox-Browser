@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+nav{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+nav li{
+    display: inline;
+    margin: 0 10px;
+}
+li a{
+    text-decoration: none;
+    
+}
+h2{
+    background-color: antiquewhite;
+}
