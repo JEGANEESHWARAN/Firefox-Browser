@@ -2,12 +2,17 @@
     margin: 0%;
     padding: 0;
 }
+header{
+    background-color: white;
+    padding:  0 0 50px;
+    box-shadow: 0 0 30px grey;
+}
 nav{
-    background-color: aqua;
     display: flex;
+    background-color: white;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 nav li{
     display: inline;
@@ -15,8 +20,73 @@ nav li{
 }
 li a{
     text-decoration: none;
-    
+}
+li:hover{
+    text-decoration: underline;
 }
 h2{
-    background-color: antiquewhite;
+    background-color: rgb(3, 3, 3);
+    font-size: 30px;
+    margin:  10px 20px;
+    color: white;
+    padding: 0 10px;
+}
+.bar {
+    width: 40px;
+    display: none;
+    font-size:25px;
+    background: transparent;
+    margin-right: 30px;
+    margin-top: -10px;
+    border: none;
+    height: 35px;
+}
+.bar:hover{
+background-color: rgb(216, 201, 201);
+    box-shadow: 0 0 5px gray , 0 0 25px gray,0 0 100px gray,0 0 200px gray;
+}
+.headnav-2dbu{
+        width: 200px;
+        height: 35px;
+        font-size: 17px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-color: aqua;
+}
+.line1{
+   display: none;
+}
+@media all and (max-width:900px){
+    nav{
+        flex-direction: column;
+    }
+    li a{
+        display: block;
+        color: black;
+    }
+    ul{
+        display: none;
+    }
+    h2{
+        align-self: flex-start;
+    }
+    .bar{
+        display: block;
+        align-self: flex-end;
+        position: absolute;
+        top: 25px;
+        cursor: pointer;
+    }
+    .line1{
+        width: 700px;
+        height: 1px;
+        background-color: aqua;
+        position: relative;
+        top: 20px;
+        display: block;
+        margin: auto;
+    }
+    .showmenu{
+        display: block;
+    }
 }
