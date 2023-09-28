@@ -9,9 +9,10 @@ header{
 }
 nav{
     display: flex;
+    background-color: white;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
 }
 nav li{
     display: inline;
@@ -24,11 +25,14 @@ li:hover{
     text-decoration: underline;
 }
 h2{
+    display: flex;
     background-color: rgb(3, 3, 3);
     font-size: 30px;
     margin:  10px 20px;
     color: white;
     padding: 0 10px;
+  
+    
 }
 .bar {
     width: 40px;
@@ -56,6 +60,9 @@ background-color: rgb(216, 201, 201);
    display: none;
 }
 @media all and (max-width:900px){
+    header{
+        box-shadow: 0px 0px 20px black;
+    }
     nav{
         flex-direction: column;
     }
@@ -68,6 +75,7 @@ background-color: rgb(216, 201, 201);
     }
     h2{
         align-self: flex-start;
+        flex-grow: 1;
     }
     .bar{
         display: block;
@@ -87,5 +95,11 @@ background-color: rgb(216, 201, 201);
     }
     .showmenu{
         display: block;
+    }
+}
+@media screen and (max-width:900px){
+    html,body{
+        width:100%;
+        overflow-x: hidden;
     }
 }
